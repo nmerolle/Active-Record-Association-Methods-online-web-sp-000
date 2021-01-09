@@ -11,6 +11,6 @@ class Genre < ActiveRecord::Base
   end
 
   def all_artist_names
-    self.where("artist = ?", params  )
+    self.where("artist = ?", params[:name]  )
   end
 end
